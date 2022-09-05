@@ -1,4 +1,4 @@
-
+// javascript
 function calculate(numOne, operator, numTwo){
 
     console.log(numOne);
