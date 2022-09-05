@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<h1 class = "tag">Seir Creations</h1>
+	<h2>calculator</h2>
+	<div>
+
+		<br>
+		<div style="float:left;margin-right:40px; position:relative; top: -5px">
+		<label id= "num_one"; for ="firstNum">First Number</label><br>
+		<input class = "input1" type="number" id="firstNum" name="1" placeholder="Enter Here">
+		</div>
+	
+		<div style="float:left;margin-right:40px; position:relative; top: 18px ;">
+		<input class = "input1" type="text" id="operator" name="0" placeholder="Operator"><br><br>
+		</div>
+		
+		<div style="float:left;margin-right:20px;">
+			<label id= "num_two"; for ="secondNum">Second Number</label><br>
+			<input class = "input1" type="number" id="secondNum" name="2" placeholder="Enter Here">
+		</div>
+
+
+
+		<button class ="button1" onclick="calculate(document.getElementById('firstNum').value, document.getElementById('operator').value, document.getElementById('secondNum').value)">Click To Find Out!
+        </button>
+
+	</div>
+    
+<div>
+<h3>How It works</h3>
+    <p class = "p_text">
+        - Enter the first number and second number on the far left and right boxes
+        <br>
+        - Enter the operate ex. (add or +) into the middle box
+        <br>
+        - Press "Click To Find Out!" to get your answer !
+    </p>
+
+<div>
+	<button class = "secret_button" onclick="changeBackground()">Click me!</button>
+</div>
+
+<div>
+	<p id="show-answer">
+	</p>
+</div>
+
+
+</div>
+
+
+</body>
+
+
+
+</html>
